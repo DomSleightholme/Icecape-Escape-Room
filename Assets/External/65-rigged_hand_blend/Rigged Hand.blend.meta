@@ -6,6 +6,12 @@ ModelImporter:
   - first:
       74: -623603649343465320
     second: Scene
+  - first:
+      74: 80215134163233535
+    second: Armature|00
+  - first:
+      74: 2400511362114573450
+    second: Armature|Hand_roll_1
   externalObjects: {}
   materials:
     importMaterials: 1
