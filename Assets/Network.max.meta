@@ -1,14 +1,9 @@
 fileFormatVersion: 2
-guid: bbeea7891175d904d9b4fd5a71082343
+guid: 1f21f302655a88a43b0b6510c67e4081
 ModelImporter:
   serializedVersion: 26
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: handMat
-    second: {fileID: 2100000, guid: 94fc81abbedf1184fbed76ae2c61a3de, type: 2}
+  externalObjects: {}
   materials:
     importMaterials: 1
     materialName: 0
@@ -92,7 +87,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 0
+  animationType: 2
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
