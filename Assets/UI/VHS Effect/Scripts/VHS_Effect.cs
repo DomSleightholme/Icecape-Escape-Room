@@ -18,7 +18,7 @@ public class VHS_Effect : MonoBehaviour {
 	[Range (0.001f, 0.1f)]
 	public float offsetColor = 0.0108f;
 
-	[Range (1500f, 1f)]
+	[Range (3000f, 1f)]
 	public float _OffsetDistortion = 1210f;
 
 	[Header("Scan")]
