@@ -3616,11 +3616,6 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 114692268201984262, guid: 17504871f215feb46b405f6f12366160,
-        type: 3}
-      propertyPath: PlayerOrCamera
-      value: 
-      objectReference: {fileID: 705489225}
     - target: {fileID: 198040762160605832, guid: 17504871f215feb46b405f6f12366160,
         type: 3}
       propertyPath: InitialModule.maxNumParticles
@@ -3631,6 +3626,11 @@ PrefabInstance:
       propertyPath: InitialModule.maxNumParticles
       value: 1000000
       objectReference: {fileID: 0}
+    - target: {fileID: 114692268201984262, guid: 17504871f215feb46b405f6f12366160,
+        type: 3}
+      propertyPath: PlayerOrCamera
+      value: 
+      objectReference: {fileID: 705489225}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 17504871f215feb46b405f6f12366160, type: 3}
 --- !u!1 &1482807144

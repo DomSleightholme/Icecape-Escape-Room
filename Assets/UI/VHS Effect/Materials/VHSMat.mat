@@ -67,14 +67,14 @@ Material:
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
-    - _Intensity: 0.856
+    - _Intensity: 0.76
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1
     - _OffsetColor: 0.001
-    - _OffsetDistortion: 3000
-    - _OffsetNoiseX: 0.2435507
-    - _OffsetNoiseY: 12.230231
+    - _OffsetDistortion: 1500
+    - _OffsetNoiseX: 0.18297133
+    - _OffsetNoiseY: 11.57958
     - _OffsetPosY: 0
     - _Parallax: 0.02
     - _ScanLines: 5.9

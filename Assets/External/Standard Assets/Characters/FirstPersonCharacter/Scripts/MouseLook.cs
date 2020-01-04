@@ -78,7 +78,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
             {
                 m_cursorIsLocked = false;
             }
-            else if(Input.GetMouseButtonUp(0))
+            else if(Input.GetKeyUp(KeyCode.Q))
             {
                 m_cursorIsLocked = true;
             }
@@ -111,5 +111,16 @@ namespace UnityStandardAssets.Characters.FirstPerson
             return q;
         }
 
+        public void ComputerUse()
+        {
+            if(Computer.ComputerOn == true)
+            {
+                Cursor.lockState = CursorLockMode.None;
+            }
+            else if(Computer.ComputerOn == false)
+            {
+                Cursor.lockState = CursorLockMode.Locked;
+            }
+        }
     }
 }

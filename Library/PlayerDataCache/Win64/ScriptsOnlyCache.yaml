@@ -1,10 +1,13 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - Computer
     - EmitterPositionController
+    - Radio
     - TV_Effect
-    - UnityStandardAssets.Characters.FirstPerson.HeadBob
-    - UnityStandardAssets.Characters.FirstPerson.RigidbodyFirstPersonController
+    - TimerCountdown
+    - UnityStandardAssets.Characters.FirstPerson.FirstPersonController
+    - UnityStandardAssets.Utility.DragRigidbody
     - VHS_Effect
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridPaintingState
@@ -20,6 +23,7 @@ ScriptsOnlyBuild:
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
+    - UnityEditor.TestTools.TestRunner.TestListCacheData
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.StandaloneInputModule
@@ -31,6 +35,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Text
     - UnityEngine.UI.Toggle
     com.unity.multiplayer-hlapi.Runtime.dll:
+    - UnityEngine.Networking.NetworkCallbacks
     - UnityEngine.Networking.NetworkIdentity
   sceneClasses:
     Assets/Scenes/Escape Room.unity:
@@ -66,8 +71,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 83
       Script: {instanceID: 0}
-    - Class: 89
-      Script: {instanceID: 0}
     - Class: 91
       Script: {instanceID: 0}
     - Class: 95
@@ -79,36 +82,36 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 9814}
     - Class: 114
+      Script: {instanceID: 9936}
+    - Class: 114
       Script: {instanceID: 10052}
     - Class: 114
       Script: {instanceID: 10108}
     - Class: 114
-      Script: {instanceID: 10650}
-    - Class: 114
       Script: {instanceID: 10668}
     - Class: 114
-      Script: {instanceID: 10852}
+      Script: {instanceID: 10708}
     - Class: 114
-      Script: {instanceID: 10994}
+      Script: {instanceID: 10748}
     - Class: 114
-      Script: {instanceID: 11254}
+      Script: {instanceID: 10854}
     - Class: 114
-      Script: {instanceID: 11304}
+      Script: {instanceID: 11256}
     - Class: 114
-      Script: {instanceID: 11570}
+      Script: {instanceID: 11466}
     - Class: 114
-      Script: {instanceID: 11902}
+      Script: {instanceID: 11906}
     - Class: 114
-      Script: {instanceID: 12406}
+      Script: {instanceID: 12410}
+    - Class: 114
+      Script: {instanceID: 21902}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 124
       Script: {instanceID: 0}
     - Class: 128
       Script: {instanceID: 0}
-    - Class: 134
-      Script: {instanceID: 0}
-    - Class: 136
+    - Class: 143
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
@@ -126,7 +129,11 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 224
       Script: {instanceID: 0}
-    - Class: 258
+    - Class: 241
+      Script: {instanceID: 0}
+    - Class: 243
+      Script: {instanceID: 0}
+    - Class: 245
       Script: {instanceID: 0}
     Assets/Scenes/MainMenu.unity:
     - Class: 1
@@ -190,23 +197,23 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 10668}
     - Class: 114
-      Script: {instanceID: 10852}
+      Script: {instanceID: 10854}
     - Class: 114
-      Script: {instanceID: 11180}
+      Script: {instanceID: 11182}
     - Class: 114
-      Script: {instanceID: 11254}
+      Script: {instanceID: 11256}
     - Class: 114
-      Script: {instanceID: 11304}
+      Script: {instanceID: 11306}
     - Class: 114
-      Script: {instanceID: 11684}
+      Script: {instanceID: 11688}
     - Class: 114
-      Script: {instanceID: 11902}
+      Script: {instanceID: 11906}
     - Class: 114
-      Script: {instanceID: 12406}
+      Script: {instanceID: 12410}
     - Class: 114
-      Script: {instanceID: 12426}
+      Script: {instanceID: 12430}
     - Class: 114
-      Script: {instanceID: 12450}
+      Script: {instanceID: 12454}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 124
@@ -478,18 +485,6 @@ ScriptsOnlyBuild:
     className: NetworkTransform
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: UnityEngine.Advertisements.dll
-    namespaceName: UnityEngine.Advertisements
-    className: CallbackExecutor
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: UnityEngine.Advertisements.dll
-    namespaceName: UnityEngine.Advertisements.Editor
-    className: Placeholder
-  - hash:
-      serializedVersion: 2
       Hash: 357dc9516c87a9d2caf5c0f50c455e56
     assemblyName: Assembly-CSharp.dll
     namespaceName: UnityStandardAssets.Water
@@ -728,6 +723,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Selectable
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: TimerCountdown
   - hash:
       serializedVersion: 2
       Hash: a8b6c919b2049fcc280823488144371f
@@ -1064,6 +1065,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: UnityStandardAssets.Water
     className: SpecularLighting
+  - hash:
+      serializedVersion: 2
+      Hash: 361524877742c4e85198380067e86753
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Radio
   - hash:
       serializedVersion: 2
       Hash: 9a40de0f5a84ec02044ccfb05875df71
@@ -1490,6 +1497,18 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: UnityStandardAssets.Utility
     className: AutoMobileShaderSwitch
+  - hash:
+      serializedVersion: 2
+      Hash: 74787d095e4bac2aa427295b795c43ac
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Computer
+  - hash:
+      serializedVersion: 2
+      Hash: e6114308f312c334c3670ce8dcd6e45f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ThePauseMenu
   platform: 19
   scenePathNames:
   - Assets/Scenes/MainMenu.unity
