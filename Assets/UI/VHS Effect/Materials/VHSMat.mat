@@ -67,17 +67,17 @@ Material:
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
-    - _Intensity: 0.76
+    - _Intensity: 0.811
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1
     - _OffsetColor: 0.001
-    - _OffsetDistortion: 1500
-    - _OffsetNoiseX: 0.18297133
-    - _OffsetNoiseY: 11.57958
+    - _OffsetDistortion: 2908
+    - _OffsetNoiseX: 0.55304605
+    - _OffsetNoiseY: 13.096453
     - _OffsetPosY: 0
     - _Parallax: 0.02
-    - _ScanLines: 5.9
+    - _ScanLines: 9.49
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
@@ -92,5 +92,5 @@ Material:
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _ScanLinesColor: {r: 0, g: 0, b: 0, a: 0}
+    - _ScanLinesColor: {r: 0, g: 0.29826307, b: 1, a: 0}
     - warp: {r: 0.03125, g: 0.04166, b: 0, a: 0}

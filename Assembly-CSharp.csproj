@@ -173,6 +173,7 @@
     <Compile Include="Assets\Scripts\CodePanel.cs" />
     <Compile Include="Assets\Scripts\Computer.cs" />
     <Compile Include="Assets\Scripts\ControlOfPlayer.cs" />
+    <Compile Include="Assets\Scripts\Locker.cs" />
     <Compile Include="Assets\Scripts\MainMenu.cs" />
     <Compile Include="Assets\Scripts\Radio.cs" />
     <Compile Include="Assets\Scripts\ThePauseMenu.cs" />

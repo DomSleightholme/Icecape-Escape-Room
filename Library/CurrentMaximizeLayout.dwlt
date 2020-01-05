@@ -164,7 +164,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 24fbffff
+      m_ExpandedIDs: 5efbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -212,7 +212,7 @@ MonoBehaviour:
   m_MinSize: {x: 204, y: 344}
   m_MaxSize: {x: 4004, y: 8044}
   vertical: 1
-  controlID: 104
+  controlID: 56
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -518,8 +518,8 @@ MonoBehaviour:
     y: 670
     width: 1278
     height: 277
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 104, y: 122}
+  m_MaxSize: {x: 4004, y: 4022}
   m_ActualView: {fileID: 12}
   m_Panes:
   - {fileID: 11}
@@ -580,7 +580,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 290}
     m_SelectedIDs: f8400000
     m_LastClickedID: 16632
-    m_ExpandedIDs: 000000007832000010370000c83700001839000064390000d23a00005c3b00006a3c0000603e0000b03e0000b43f0000b63f00002840000078400000b0440000b24400000a450000984600009c460000e0550000e2550000e4550000e6550000e8550000ea550000
+    m_ExpandedIDs: 0000000014320000aa36000062370000b2380000fe3800006c3a0000f63a0000043c0000fa3d00004a3e00004e3f0000503f0000c23f0000124000004a4400004c440000a44400003246000036460000a0550000a2550000a4550000a6550000a8550000aa550000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -608,7 +608,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000007832000010370000c83700001839000064390000d23a00005c3b00006a3c0000603e0000b03e0000b43f0000b63f00002840000078400000b0440000b24400000a450000984600009c460000e0550000e2550000e4550000e6550000e8550000ea550000
+    m_ExpandedIDs: 0000000014320000aa36000062370000b2380000fe3800006c3a0000f63a0000043c0000fa3d00004a3e00004e3f0000503f0000c23f0000124000004a4400004c440000a44400003246000036460000a0550000a2550000a4550000a6550000a8550000aa550000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -856,8 +856,8 @@ MonoBehaviour:
     y: 0
     width: 397
     height: 947
-  m_MinSize: {x: 277, y: 72}
-  m_MaxSize: {x: 4002, y: 4022}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}

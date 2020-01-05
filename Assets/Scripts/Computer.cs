@@ -36,7 +36,6 @@ public class Computer : MonoBehaviour
                 Screen.SetActive(true);
                 Cursor.visible = true;
                 Cursor.lockState = CursorLockMode.None;
-                test = true;
             }
             else if (!ComputerOn)
             {
