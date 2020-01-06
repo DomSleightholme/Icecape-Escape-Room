@@ -7,12 +7,13 @@ public class Locker : MonoBehaviour
     public GameObject HandHover;
     public AudioSource OpenLocker;
 
+    public Animator anim;
+
     public static bool LockerOpen;
     void Start()
     {
         Interact.SetActive(false);
         HandHover.SetActive(false);
-
     }
 
     public void OnMouseOver()
@@ -27,11 +28,12 @@ public class Locker : MonoBehaviour
             {
                 Debug.Log("Locker Open");
                 OpenLocker.Play();
+                anim.SetTrigger("OpenDoor");
             }
             else if (!LockerOpen)
             {
                 Debug.Log("Locker Close");
-                OpenLocker.Play();
+                anim.enabled = true;
             }
         }
     }
@@ -42,4 +44,8 @@ public class Locker : MonoBehaviour
         HandHover.SetActive(false);
     }
 
+    void pauseAnimationEvent()
+    {
+        anim.enabled = false;
+    }
 }

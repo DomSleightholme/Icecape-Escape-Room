@@ -16,6 +16,8 @@ public class CodePanel : MonoBehaviour
 
     public GameObject Door;
 
+    public Animator LockerRoom;
+
     void Update()
     {
         //This states that the UI text is equal to the text value entered.
@@ -83,13 +85,19 @@ public class CodePanel : MonoBehaviour
         }
 
         //This code will run if the user gets the correct code.
-        if (codeTextValue == "1234")
+        if (codeTextValue == "57206413")
         {
             Debug.Log("Open");
             Enter.Play();
             codeText.text = "UNLOCKED";
             CodeWork = true;
             Debug.Log("Open Door");
+            LockerRoom.SetTrigger("CodeWork");
+        }
+
+        void pauseAnimationEvent()
+        {
+            LockerRoom.enabled = false;
         }
     }
 }
