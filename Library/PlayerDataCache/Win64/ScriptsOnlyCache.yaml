@@ -1,11 +1,28 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - CameraShaker
+    - CodePanel
     - Computer
+    - DoorBanging
+    - DoorLock1
+    - DoorLock2
+    - DoorLock3
+    - DoorLock4
     - EmitterPositionController
+    - Key1
+    - Key2
+    - Key3
+    - Key4
+    - KeyLocks
+    - Locker
+    - MainMenu
     - Radio
+    - SceneScript
+    - SplashScreen
     - TV_Effect
-    - TimerCountdown
+    - ThankYouForPlaying
+    - Timer
     - UnityStandardAssets.Characters.FirstPerson.FirstPersonController
     - UnityStandardAssets.Utility.DragRigidbody
     - VHS_Effect
@@ -23,7 +40,6 @@ ScriptsOnlyBuild:
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
-    - UnityEditor.TestTools.TestRunner.TestListCacheData
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.StandaloneInputModule
@@ -31,11 +47,9 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
-    - UnityEngine.UI.Slider
     - UnityEngine.UI.Text
     - UnityEngine.UI.Toggle
     com.unity.multiplayer-hlapi.Runtime.dll:
-    - UnityEngine.Networking.NetworkCallbacks
     - UnityEngine.Networking.NetworkIdentity
   sceneClasses:
     Assets/Scenes/Escape Room.unity:
@@ -84,32 +98,64 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 9936}
     - Class: 114
-      Script: {instanceID: 10052}
+      Script: {instanceID: 10054}
     - Class: 114
-      Script: {instanceID: 10108}
+      Script: {instanceID: 10110}
     - Class: 114
-      Script: {instanceID: 10668}
+      Script: {instanceID: 10272}
     - Class: 114
-      Script: {instanceID: 10708}
+      Script: {instanceID: 10408}
     - Class: 114
-      Script: {instanceID: 10748}
+      Script: {instanceID: 10502}
     - Class: 114
-      Script: {instanceID: 10854}
+      Script: {instanceID: 10558}
     - Class: 114
-      Script: {instanceID: 11256}
+      Script: {instanceID: 10662}
     - Class: 114
-      Script: {instanceID: 11466}
+      Script: {instanceID: 10680}
     - Class: 114
-      Script: {instanceID: 11906}
+      Script: {instanceID: 10720}
     - Class: 114
-      Script: {instanceID: 12410}
+      Script: {instanceID: 10856}
     - Class: 114
-      Script: {instanceID: 21902}
+      Script: {instanceID: 10866}
+    - Class: 114
+      Script: {instanceID: 10916}
+    - Class: 114
+      Script: {instanceID: 11066}
+    - Class: 114
+      Script: {instanceID: 11324}
+    - Class: 114
+      Script: {instanceID: 11396}
+    - Class: 114
+      Script: {instanceID: 11416}
+    - Class: 114
+      Script: {instanceID: 11488}
+    - Class: 114
+      Script: {instanceID: 11552}
+    - Class: 114
+      Script: {instanceID: 11614}
+    - Class: 114
+      Script: {instanceID: 11912}
+    - Class: 114
+      Script: {instanceID: 11934}
+    - Class: 114
+      Script: {instanceID: 12004}
+    - Class: 114
+      Script: {instanceID: 12086}
+    - Class: 114
+      Script: {instanceID: 12380}
+    - Class: 114
+      Script: {instanceID: 12404}
+    - Class: 114
+      Script: {instanceID: 12452}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 124
       Script: {instanceID: 0}
     - Class: 128
+      Script: {instanceID: 0}
+    - Class: 136
       Script: {instanceID: 0}
     - Class: 143
       Script: {instanceID: 0}
@@ -181,39 +227,41 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 9976}
     - Class: 114
-      Script: {instanceID: 9980}
+      Script: {instanceID: 9982}
     - Class: 114
-      Script: {instanceID: 10052}
+      Script: {instanceID: 10054}
     - Class: 114
-      Script: {instanceID: 10066}
+      Script: {instanceID: 10068}
     - Class: 114
-      Script: {instanceID: 10098}
+      Script: {instanceID: 10100}
     - Class: 114
-      Script: {instanceID: 10108}
+      Script: {instanceID: 10110}
     - Class: 114
-      Script: {instanceID: 10362}
+      Script: {instanceID: 10366}
     - Class: 114
-      Script: {instanceID: 10650}
+      Script: {instanceID: 10662}
     - Class: 114
-      Script: {instanceID: 10668}
+      Script: {instanceID: 10680}
     - Class: 114
-      Script: {instanceID: 10854}
+      Script: {instanceID: 10866}
     - Class: 114
-      Script: {instanceID: 11182}
+      Script: {instanceID: 11200}
     - Class: 114
-      Script: {instanceID: 11256}
+      Script: {instanceID: 11274}
     - Class: 114
-      Script: {instanceID: 11306}
+      Script: {instanceID: 11324}
     - Class: 114
-      Script: {instanceID: 11688}
+      Script: {instanceID: 11714}
     - Class: 114
-      Script: {instanceID: 11906}
+      Script: {instanceID: 11820}
     - Class: 114
-      Script: {instanceID: 12410}
+      Script: {instanceID: 11934}
     - Class: 114
-      Script: {instanceID: 12430}
+      Script: {instanceID: 12004}
     - Class: 114
-      Script: {instanceID: 12454}
+      Script: {instanceID: 12452}
+    - Class: 114
+      Script: {instanceID: 12472}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 124
@@ -223,6 +271,128 @@ ScriptsOnlyBuild:
     - Class: 135
       Script: {instanceID: 0}
     - Class: 136
+      Script: {instanceID: 0}
+    - Class: 154
+      Script: {instanceID: 0}
+    - Class: 156
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 198
+      Script: {instanceID: 0}
+    - Class: 199
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 218
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    - Class: 241
+      Script: {instanceID: 0}
+    - Class: 243
+      Script: {instanceID: 0}
+    - Class: 245
+      Script: {instanceID: 0}
+    - Class: 258
+      Script: {instanceID: 0}
+    - Class: 1953259897
+      Script: {instanceID: 0}
+    Assets/Scenes/SplashScreen.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 12002}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 328
+      Script: {instanceID: 0}
+    - Class: 329
+      Script: {instanceID: 0}
+    Assets/Scenes/ThankYouForPlaying.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 23
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 33
+      Script: {instanceID: 0}
+    - Class: 43
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
+    - Class: 89
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 9814}
+    - Class: 114
+      Script: {instanceID: 10054}
+    - Class: 114
+      Script: {instanceID: 10110}
+    - Class: 114
+      Script: {instanceID: 10662}
+    - Class: 114
+      Script: {instanceID: 10680}
+    - Class: 114
+      Script: {instanceID: 10866}
+    - Class: 114
+      Script: {instanceID: 11324}
+    - Class: 114
+      Script: {instanceID: 11934}
+    - Class: 114
+      Script: {instanceID: 11986}
+    - Class: 114
+      Script: {instanceID: 12004}
+    - Class: 114
+      Script: {instanceID: 12452}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 124
+      Script: {instanceID: 0}
+    - Class: 128
       Script: {instanceID: 0}
     - Class: 154
       Script: {instanceID: 0}
@@ -357,6 +527,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Postprocessing.Runtime.dll
     namespaceName: UnityEngine.Rendering.PostProcessing
     className: MotionBlur
+  - hash:
+      serializedVersion: 2
+      Hash: e6114308f312c334c3670ce8dcd6e45f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ThePauseMenu
   - hash:
       serializedVersion: 2
       Hash: 04e4a8b0447477cc4e933d9e5311188f
@@ -527,6 +703,12 @@ ScriptsOnlyBuild:
     className: SignalAsset
   - hash:
       serializedVersion: 2
+      Hash: e4e0bc686d0aa685b19ff3572f015c06
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Key1
+  - hash:
+      serializedVersion: 2
       Hash: 38bcb4d3f9a1812fd650f92e87a4cf64
     assemblyName: Unity.Postprocessing.Runtime.dll
     namespaceName: UnityEngine.Rendering.PostProcessing
@@ -581,6 +763,12 @@ ScriptsOnlyBuild:
     className: RectMask2D
   - hash:
       serializedVersion: 2
+      Hash: 608739557adaa2b73cbcc8a98f6cb5ca
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DoorLock2
+  - hash:
+      serializedVersion: 2
       Hash: 4e9333594897a1fb8b136ad2eae996c7
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -617,10 +805,28 @@ ScriptsOnlyBuild:
     className: WaypointProgressTracker
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: KeyLocks
+  - hash:
+      serializedVersion: 2
+      Hash: afc5b93a7b192de2dcb3832fe35a5c7e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ControlOfPlayer
+  - hash:
+      serializedVersion: 2
       Hash: aba7b2852ef61d175dd9602e7723d5e5
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Mask
+  - hash:
+      serializedVersion: 2
+      Hash: e4e0bc686d0aa685b19ff3572f015c06
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Key4
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -725,12 +931,6 @@ ScriptsOnlyBuild:
     className: Selectable
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: TimerCountdown
-  - hash:
-      serializedVersion: 2
       Hash: a8b6c919b2049fcc280823488144371f
     assemblyName: Assembly-CSharp.dll
     namespaceName: UnityStandardAssets.CrossPlatformInput
@@ -773,6 +973,12 @@ ScriptsOnlyBuild:
     className: NetworkTransformVisualizer
   - hash:
       serializedVersion: 2
+      Hash: 924c15c3a1d2f3aa2c15aab5c8da6512
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DoorLock3
+  - hash:
+      serializedVersion: 2
       Hash: 3fe956725ef358163257d801cce16a8c
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -785,10 +991,22 @@ ScriptsOnlyBuild:
     className: EmitterPositionController
   - hash:
       serializedVersion: 2
+      Hash: ba1a29d9ccf1b6be668171b53900331e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CameraMovement
+  - hash:
+      serializedVersion: 2
       Hash: 0574135745ea880aa1c1be2f2057ab89
     assemblyName: Assembly-CSharp.dll
     namespaceName: UnityStandardAssets.Utility
     className: ActivateTrigger
+  - hash:
+      serializedVersion: 2
+      Hash: 2d0d380d2377fefa349e5c98f3ad43dc
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Timer
   - hash:
       serializedVersion: 2
       Hash: 4bd1cc3c85989d2213a9a8fd9d09e63f
@@ -873,6 +1091,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: UnityStandardAssets.Utility
     className: SmoothFollow
+  - hash:
+      serializedVersion: 2
+      Hash: 3fcd323758aa2a641f50254deeac140f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DoorLock4
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -1037,10 +1261,22 @@ ScriptsOnlyBuild:
     className: ExplosionFireAndDebris
   - hash:
       serializedVersion: 2
+      Hash: d5e3091fbf29e50cb1c95e695e7f5078
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CameraShaker
+  - hash:
+      serializedVersion: 2
       Hash: 5ad4aa237d47ac2bab17bacb672edf7a
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: VerticalLayoutGroup
+  - hash:
+      serializedVersion: 2
+      Hash: c7943b3be2ac7ed7a42280301e81b8be
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DoorBanging
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -1103,6 +1339,12 @@ ScriptsOnlyBuild:
     className: Water
   - hash:
       serializedVersion: 2
+      Hash: cc8cfc7500d11125768a2c0399f94e52
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Locker
+  - hash:
+      serializedVersion: 2
       Hash: 5ad4aa237d47ac2bab17bacb672edf7a
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -1149,6 +1391,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: UnityStandardAssets.Cameras
     className: HandHeldCam
+  - hash:
+      serializedVersion: 2
+      Hash: e4e0bc686d0aa685b19ff3572f015c06
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Key3
   - hash:
       serializedVersion: 2
       Hash: b294ba655397a2a6c58cddd17cea876c
@@ -1253,6 +1501,12 @@ ScriptsOnlyBuild:
     className: DataPrivacyButton
   - hash:
       serializedVersion: 2
+      Hash: dd668c0c4587ea7f969a764a2a2bcfc7
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CodePanel
+  - hash:
+      serializedVersion: 2
       Hash: b9048d3760274b9fd3dc94b75b3d0f96
     assemblyName: Assembly-CSharp.dll
     namespaceName: UnityStandardAssets.Effects
@@ -1289,6 +1543,24 @@ ScriptsOnlyBuild:
     className: FollowTarget
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ThankYouForPlaying
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SplashScreen
+  - hash:
+      serializedVersion: 2
+      Hash: 9b5c3e3c50f8d5acf063e7e4d0abaea6
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SceneScript
+  - hash:
+      serializedVersion: 2
       Hash: 74fdef42e5d1b91d250d09f9fc6f54da
     assemblyName: Assembly-CSharp.dll
     namespaceName: UnityStandardAssets._2D
@@ -1317,6 +1589,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: VHSCanvasControl
+  - hash:
+      serializedVersion: 2
+      Hash: 26f86e5e1cea6642c6f8241f8c10733e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Computer
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -1365,6 +1643,12 @@ ScriptsOnlyBuild:
     assemblyName: com.unity.multiplayer-hlapi.Runtime.dll
     namespaceName: UnityEngine.Networking
     className: NetworkAnimator
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: OpenClose
   - hash:
       serializedVersion: 2
       Hash: d5630f96bd5a6a6eed7e1754c3fb8703
@@ -1427,10 +1711,22 @@ ScriptsOnlyBuild:
     className: NetworkManagerHUD
   - hash:
       serializedVersion: 2
+      Hash: e4e0bc686d0aa685b19ff3572f015c06
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Key2
+  - hash:
+      serializedVersion: 2
       Hash: a63fc1a3b035e5a0b5839cd7f7b3086e
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
     className: EventTrigger
+  - hash:
+      serializedVersion: 2
+      Hash: d16bb9085fa30ff7bd2964f930ad27d1
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DoorLock1
   - hash:
       serializedVersion: 2
       Hash: 8649814970b42d345b89944b862453cc
@@ -1497,21 +1793,11 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: UnityStandardAssets.Utility
     className: AutoMobileShaderSwitch
-  - hash:
-      serializedVersion: 2
-      Hash: 74787d095e4bac2aa427295b795c43ac
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Computer
-  - hash:
-      serializedVersion: 2
-      Hash: e6114308f312c334c3670ce8dcd6e45f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: ThePauseMenu
   platform: 19
   scenePathNames:
   - Assets/Scenes/MainMenu.unity
   - Assets/Scenes/Escape Room.unity
+  - Assets/Scenes/ThankYouForPlaying.unity
+  - Assets/Scenes/SplashScreen.unity
   playerPath: C:/Users/Dom/Documents/GitHub/Icecape-Escape-Room/Build Versions/Icecape
     The Escape Room.exe

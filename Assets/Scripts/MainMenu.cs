@@ -34,4 +34,10 @@ public class MainMenu : MonoBehaviour
     {
         Screen.fullScreen = isFullscreen;
     }
+
+    public void Start()
+    {
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+    }
 }

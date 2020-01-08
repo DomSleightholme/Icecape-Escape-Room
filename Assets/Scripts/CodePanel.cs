@@ -29,6 +29,8 @@ public class CodePanel : MonoBehaviour
             Error.Play();
         }
 
+        
+
         //The Code below will enter the spefic key into the Computer terminal
         if (CodeWork == false)
         {

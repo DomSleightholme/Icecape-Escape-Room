@@ -23,7 +23,7 @@ public class Computer : MonoBehaviour
     }
 
     public void OnMouseOver()
-    {
+    {      
         Interact.SetActive(true);
         HandHover.SetActive(true);       
 

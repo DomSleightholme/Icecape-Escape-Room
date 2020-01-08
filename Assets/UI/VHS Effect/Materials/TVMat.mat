@@ -85,10 +85,10 @@ Material:
     - _ZWrite: 1
     - _scanLines: 1
     - hardPix: -2.69
-    - hardScan: -4.11
+    - hardScan: -8
     - maskDark: 1.15
     - maskLight: 0.94
-    - resScale: 1
+    - resScale: 2.8
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}

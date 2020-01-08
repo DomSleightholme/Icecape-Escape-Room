@@ -2,16 +2,24 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Timer : MonoBehaviour
 {
     public Text TimerText;
-    float gameTimer = 600f;
+    float gameTimer = 300f;
 
+    public Animator animator;
+    public GameObject Player;
 
-    void Start()
+    public AudioSource DeathOfPlayer;
+    
+
+    public static bool TimesUp = false;
+
+    public void Start()
     {
-        StartCoroutine(Blizzard());
+        InvokeRepeating("AudioPlay", 290, 60);
     }
     void Update()
     {
@@ -24,28 +32,27 @@ public class Timer : MonoBehaviour
 
         TimerText.text = timerString;
 
+        if (gameTimer < 1)
+        {
+            TimesUp = true;
+        }
+
+        if (TimesUp == true)
+        {
+            animator.SetTrigger("FadeOut");            
+            StartCoroutine(Death());
+        }
+        
     }
-    public IEnumerator Blizzard()
+
+    public IEnumerator Death()
     {
-        yield return new WaitForSeconds(60f);
-        Debug.Log("Blizzard1");
+        yield return new WaitForSeconds(6f);
+        SceneManager.LoadScene("ThankYouForPlaying");
+    }
 
-        yield return new WaitForSeconds(180f);
-        Debug.Log("Blizzard2");
-
-        yield return new WaitForSeconds(300f);
-        Debug.Log("Blizzard3");
-
-        yield return new WaitForSeconds(420f);
-        Debug.Log("Blizzard4");
-
-        yield return new WaitForSeconds(480f);
-        Debug.Log("Blizzard5");
-
-        yield return new WaitForSeconds(570f);
-        Debug.Log("Blizzard6");
-
-        yield return new WaitForSeconds(600f);
-        Debug.Log("Dead");
+    public void AudioPlay()
+    {
+        DeathOfPlayer.Play();
     }
 }
